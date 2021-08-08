@@ -1,66 +1,71 @@
  ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Lesson 3.8: Multi-class classification & Classification models
+# Trainer Notes - CSS|Advanced Selectors
 
-### Lesson Duration: 3 hours
+:clock10: Lesson Duration: 2 hours
 
-> Purpose: The purpose of this lesson is to introduce multi-class classification problems and revisit the data analysis workflow with classification modeling using logistic regression.
+> Purpose: The purpose of this lesson is to <b> Consolidate the learning from the Online Lesson </b> completed by the students before this Zoom session and prepare them to the final part of the course, where they will need to submit their individual work to the Ironhack lab.
 
 ---
+### Learning Goals (reminder)
+
+After this lesson, students should be able to:
+
+- Select elements using basic selectors
+- Select elements combining different selectors
+- Select elements based on their relationship to other elements
+- Select elements based on their attributes
 
 ### Setup
 
-- All previous set up
+- Make sure you have the latest version of Zoom installed on your machine
+- Have all the polls/Quizzes/interactions/breakout rooms ready in the backend 
+- Test your micrphone and webcam
+- Find a quiet space with a simple background to avoid user's distraction
+- Have the links to CodePen and other sites ready
+- Make sure your material is accessible and have the "cheat-sheet" document for the students prepared
 
-### Learning Objectives
+### Trainer Tips
+Please access the 'Train the trainer' Ironhack module to review our training framework and make sure your session is aligned with it. Some additional key aspects to consider are:
 
-After this lesson, students will be able to:
+ENGAGEMENT
+- Adapt to the class. When asking questions, you will see the understanding of the group and they may bring really interesting points that were not part of your agenda. Please try to continue the session building on their answers so they can feel they are listend.
+- Allow time for discussion. Very often learning takes place when people exchange their views on a subject. Nourish those exchanges and ask them to comment on other student's ideas (always with respect, of course)
 
-- Conceptualize the data analysis workflow
-- Explain logistic regression
-- Differentiate binary classification and multi-class classification problems
-- Use logistic regression for multi class classification
-- Check the accuracy of the model
+CHECKS FOR UNDERSTANDING
+- Use the quick polls to easily check the understanding of the lesson
+- Go into each 'Breakout Room' to ask how the activity is going and if they need any help
+- Notice if the "quiet students" are working on the task on CodePen
+
+REAL-WORLD EXAMPLES
+- Bring websites/projects you have worked in the past
+- Use of OpenSource active platforms
+
+LEARNING ACTIVITIES
+- Zoom Polls
+- Zoom Breakout rooms
+- Code Pen exercises
+- Partner Project ??Using your real-world project or OpenSource ???
+- Quiz race using Kahoot or MyQuiz (optional)
 
 ---
 
-### Lesson 1 key concepts
+### Part 1 - Recap
 
-> :clock10: :+1: 20 min
+> :clock10: 30 min
 
-- Introduce the multi-class classification problem
-- Establish connection between SQL and Python
-- Write query to pull the data from SQL into Python as a dataframe
+1) Launch the Initial Zoom Polls (P1 how did they find the online lesson?, P2 did they access the CodePen links?) - The results will give you an initial idea of the level of the class and how long you may spend in the CodePen examples
 
-<details>
-  <summary> Click for Code Sample: Python and database connection </summary>
+2) Review concepts by sharing the "cheat-sheet" on your screen with all the codes covered in the Online Lesson
 
-```python
-import pymysql
-from sqlalchemy import create_engine
-import pandas as pd
-import getpass  # To get the password without showing the input
-password = getpass.getpass()
-```
+3) Write query to pull the data from SQL into Python as a dataframe
 
-</details>
 
-<details>
-  <summary> Click for Code Sample: Import data into a dataframe </summary>
 
-```python
-connection_string = 'mysql+pymysql://root:' + password + '@localhost/bank'
-engine = create_engine(connection_string)
-query = '''select t.type, t.operation, t.amount as t_amount, t.balance, t.k_symbol, l.amount as l_amount, l.duration, l.payments, l.status
-from trans t
-left join loan l
-on t.account_id = l.account_id;'''
 
-data = pd.read_sql_query(query, engine)
-data.head()
-```
 
-</details>
+
+
 
 ---
 
