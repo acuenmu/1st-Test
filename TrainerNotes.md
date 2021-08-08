@@ -58,7 +58,7 @@ Please access the 'Train the trainer' Ironhack module to review our training fra
 
 🗒️  2) Review concepts by sharing the "cheat-sheet" on your screen with all the codes covered in the Online Lesson. Ask the group to use the raise the hand button to answer and unmute their mics. If you see they don't use the button, explain they can also submit the answer in the chat window.
 
-🔎  3) Ask if they have any questions about the Online Lesson - explain they can freely unmute themselves to comment/discuss.
+🎙️  3) Ask if they have any questions about the Online Lesson - explain they can freely unmute themselves to comment/discuss.
 
 🖥️  4) Review in Group the CodePen activity Selecting Adjacent Siblings so everybody can test access to the site on their devices before the main activity that will take place by pairs later
 
@@ -68,236 +68,27 @@ Please access the 'Train the trainer' Ironhack module to review our training fra
 
 ---
 
-### Part 1 - Recap
+### Part 2 - Hands on
 
-> :clock10: 30 min
+> :clock10: 1h
 
 
-4) Group Activity using slides (3 snippets of CSS code): showing the snippets of the code you prepared, ask to identify all the advanced selectors used in it. After a bit of discussion, reveal the answer with the total and move to the next snippet.
+📜  5) Group Activity using slides (3 snippets of CSS code): showing the snippets of the code you prepared, ask to identify all the advanced selectors used in it. After a bit of discussion, reveal the answer with the total and move to the next snippet.
 
+💻  6) Working by pairs - using Zoom breakout rooms + CodePen
+- Activty 1 (class divided by pairs and breakoutrooms): ask to add 5 more languages to the list and use the selectors they want to show they can work with them in the code.  
+of code using split the group into pairs and send
 
+(bring the students back to the main Zoom session to explain the instructions of the second activity)
 
+- Activity 2: Using the 'real-live example' you brought (or using the Star Wars CodePen by JOSH https://codepen.io/spamgoblin/pen/VwbByXM)
+Ask them to modify the CSS to get it similar to X (screenshot of the final look of the site you want the students to replicate) 
+Check on each room, ask if they need help and suggest options accordingly.
 
+- Quick presentation: at the end of Activity 2, bring them all back to the main Zoom session and ask them to share their screens with the group to show the results of their work with the group.
 
 
-
-
-
-
-#### :pencil2: Check for Understanding - Class activity/quick quiz
-
-> :clock10: 10 min (+ 10 min Review)
-
-<details>
-  <summary> Click for Instructions: Activity 1 </summary>
-
-- Link to [activity 1](https://github.com/ironhack-edu/data_3.08_activities/blob/master/3.08_activity_1.md).
-
-</details>
-
-<details>
-  <summary> Click for Solution: Activity 1 solutions </summary>
-
-- Link to [activity 1 solution](https://gist.github.com/ironhack-edu/253270833e1716fca5d7273469ea757d).
-
-</details>
-
----
-
-:coffee: **BREAK**
-
----
-
-### Lesson 2 key concepts
-
-> :clock10: 20 min
-
-Revisit Data Analysis work flow for modeling - 1
-
-- Data acquisition (already performed)
-- Exploratory data analysis
-- Data Cleaning/wrangling
-
-<details>
-  <summary> Click for Code Sample </summary>
-
-```python
-data['status'].value_counts()
-
-data.shape
-
-data.dtypes
-
-data.isna().sum()
-data = data[data['duration'].isna() == False]
-
-data.describe()
-
-data['duration'] = data['duration'].astype('object') # This will be treated as categorical
-data.describe()
-data.isna().sum()
-```
-
-</details>
-
-<details>
-  <summary> Click for Code Sample:  Cleaning Categorical Columns</summary>
-
-```python
-data['operation'].value_counts()
-def cleanOperation(x):
-    x = x.lower()
-    if 'vyber' in x:
-        return "vyber"
-    elif 'prevod' in x:
-        return "prevod"
-    elif 'vklad' in x:
-        return 'vklad'
-    else:
-        return 'unknown'
-
-data['operation'] = list(map(cleanOperation, data['operation']))
-```
-
-```python
-data['k_symbol'].value_counts()
-data['k_symbol'].value_counts().index
-def cleankSymbol(x):
-    if x in ['', ' ']:
-        return 'unknown'
-    else:
-        return x
-
-data['k_symbol'] = list(map(cleankSymbol, data['k_symbol']))
-data = data[~data['k_symbol'].isin(['POJISTINE', 'SANKC. UROK', 'UVER'])]
-```
-
-```python
-def clean_type(x):
-    if 'PRI' in x:
-        return 'PRIJEM'
-    else:
-        return x
-
-data['type'] = list(map(clean_type, data['type']))
-```
-
-</details>
-
----
-
-#### :pencil2: Check for Understanding - Class activity/quick quiz
-
-> :clock10: 10 min (+ 10 min Review)
-
-<details>
-  <summary> Click for Instructions: Activity 2 </summary>
-
-- Link to [activity 2](https://github.com/ironhack-edu/data_3.08_activities/blob/master/3.08_activity_2.md).
-
-</details>
-
-<details>
-  <summary> Click for Solution: Activity 2 solutions </summary>
-
-- Link to [activity 2 solutions](https://gist.github.com/ironhack-edu/2946a99a19aa1f86c066e7dd1ffec7fc).
-
-</details>
-
----
-
-:coffee: **BREAK**
-
----
-
-### Lesson 3 key concepts
-
-> :clock10: 20 min
-
-Revisit Data Analysis work flow for modeling - 2
-
-- More EDA/data cleaning
-- Data pre processing
-
-<details>
-  <summary> Click for Code Sample: EDA / Data Cleaning </summary>
-
-```python
-import matplotlib.pyplot as plt
-import seaborn as sns
-%matplotlib inline
-```
-
-```python
-corr_matrix=data.corr(method='pearson')  # default
-fig, ax = plt.subplots(figsize=(10, 8))
-ax = sns.heatmap(corr_matrix, annot=True)
-plt.show()
-```
-
-```python
-sns.distplot(data['t_amount'])
-plt.show()
-
-sns.distplot(data['l_amount'])
-plt.show()
-
-sns.distplot(data['balance'])
-plt.show()
-
-sns.distplot(data['payments'])
-plt.show()
-```
-
-</details>
-
-<details>
-  <summary> Click for Code Sample: Data preprocessing </summary>
-
-```python
-import numpy as np
-from sklearn.preprocessing import Normalizer
-# from sklearn.preprocessing import StandardScaler
-
-X = data.select_dtypes(include = np.number)
-
-# Normalizing data
-transformer = Normalizer().fit(X)
-x_normalized = transformer.transform(X)
-x = pd.DataFrame(x_normalized)
-```
-
-```python
-cat = data.select_dtypes(include = np.object)
-cat = cat.drop(['status'], axis=1)
-categorical = pd.get_dummies(cat, columns=['type', 'operation', 'k_symbol', 'duration'])
-```
-
-</details>
-
----
-
-### :pencil2: Check for Understanding - Class activity/quick quiz
-
-> :clock10: 30 min
-
-<details>
-  <summary> Click for Instructions: Activity 3 </summary>
-
-- Link to [activity 3](https://github.com/ironhack-edu/data_3.08_activities/blob/master/3.08_activity_3.md).
-
-</details>
-
-<details>
-  <summary>Click for Solution: Activity 3 solutions</summary>
-
-- Link to [activity 3 solution](https://gist.github.com/ironhack-edu/9ca2052231cc1802096e2f0c4eb7e9a9).
-
-</details>
-
----
-
-### Lesson 4 key concepts
+### Part 3 - Questions and Next Steps
 
 > :clock10: 20 min
 
@@ -309,58 +100,6 @@ Revisit Data Analysis work flow for modeling - 2
 
 :exclamation: Note to instructor: When we work with multi class classification problem and use Logistic Regression method from `sklearn`, the argument "multi_class" can take different arguments. Discuss the one versus rest method and multinomial mehtod briefly, how they are different.
 
-<details>
-  <summary> Click for Code Sample: Train test split </summary>
-
-```python
-y = data['status']
-X = np.concatenate((x, categorical), axis=1)
-```
-
-```python
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=100)
-```
-
-</details>
-
-<details>
-  <summary> Click for Code Sample: Fitting the model </summary>
-
-- Refer to the documentation
-  [https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html]
-
-```python
-from sklearn.linear_model import LogisticRegression
-classification = LogisticRegression(random_state=0, solver='lbfgs',
-                  multi_class='multinomial').fit(X_train, y_train)
-```
-
-```python
-predictions = classification.predict(X_test)
-classification.score(X_test, y_test)
-```
-
-```python
-print(y_test.value_counts())
-# As you would notice here, there is a huge imbalance in the data among the different classes. We will talk more about imbalance and how to resolve it later
-
-pd.Series(predictions).value_counts()
-# This shows that the disparity in the numbers are amplified by the model
-```
-
-```python
-from sklearn.metrics import confusion_matrix
-confusion_matrix(y_test, predictions)
-```
-
-</details>
-
----
-
-:coffee: **BREAK**
-
----
 
 ### :pencil2: Practice on key concepts - Lab
 
