@@ -76,17 +76,17 @@ Please access the 'Train the trainer' Ironhack module to review our training fra
 📜  5) Group Activity using slides (3 snippets of CSS code): showing the snippets of the code you prepared, ask to identify all the advanced selectors used in it. After a bit of discussion, reveal the answer highligthing every single one and move to the next snippet.
 
 💻  6) Working by pairs - using Zoom breakout rooms + CodePen
-- Activty 1 (class divided by pairs and breakout rooms): ask to add 5 more languages to the list and use the selectors they want to show they can work with them in the code. Link: https://codepen.io/abernier/embed/NWKmera?height=485&theme-id=0&default-tab=html,result
+- Activty 1 (class divided by pairs and breakout rooms): ask to add 5 more languages to the list and use whichever selectors they may want just to play and show they can work with them in the code. Link: https://codepen.io/abernier/embed/NWKmera?height=485&theme-id=0&default-tab=html,result
 
 (bring the students back to the main Zoom session to explain the instructions for the second activity)
 
-- Activity 2: Using the 'real-live example' you brought (or using the Star Wars CodePen by JOSH https://codepen.io/spamgoblin/pen/VwbByXM)
+- Activity 2: (again the breakout rooms) Using the 'real-live example' you brought (or using the Star Wars CodePen by JOSH https://codepen.io/spamgoblin/pen/VwbByXM)
 Ask them to modify the CSS to get it similar to X (screenshot of the final look of the site you want the students to replicate) 
 Check on each room, ask if they need help and suggest options accordingly.
 
-- Quick presentation: at the end of Activity 2, bring them all back to the main Zoom session and ask them to share their screens with the group to show the results of their work with the group. Ask them about their biggest challenges for the task.
+- Quick presentation: at the end of Activity 2, bring them all back to the main Zoom session and ask them to share their screens with the group to show the results of their work with them. Ask them about their biggest challenges for the task.
 
-(optional) 7) Run a "quiz race" using Kahoot, MyQuiz or similar for learners to identify selectors used in the lesson. This is an optional activity if you need to complete the duration of the lesson and enables some fun competition amongst the students.
+❔ (optional) 7) Run a "quiz race" using Kahoot, MyQuiz or similar for learners to identify selectors used in the lesson. This is an optional activity if you need to complete the duration of the lesson and it enables some fun competition amongst the students.
 
 
 ### Part 3 - Questions and Next Steps
@@ -95,11 +95,11 @@ Check on each room, ask if they need help and suggest options accordingly.
 
 Ask if there are any questions about the content covered today
 
-Introduce the next and final activity of the course, which it's an individual task to be completed by every student within one week. As usual, then yhey will find all the required information in the <b>Github IronHack lab </b>. Please share the specific link to it and remind them of the usual fork-pull request process to submit their projects.
+Introduce the next and final activity of the course, which it's an individual task to be completed by every student within one week. As usual, they will find all the required information in the <b>Github IronHack lab </b>. Please share the specific link to it and remind them of the usual fork-pull request process to submit their projects.
 
 Link to the lab: [https://github.com/ironhack-labs/lab-xxxxxxxxxxxxx)
 
-Remind them that they can contact you or the Ironhack supporting team via the standard channels and they can also use the Forum to exchange ideas (this could be a dedicated Ironhack Community platform, a Slack channel, etc.)
+Explain that they can contact you or the Ironhack supporting team via the standard channels and they can also use the Forum to exchange ideas (this could be a dedicated Ironhack Community platform, a Slack channel, etc.)
 
 Many thanks for your work and good luck! 🙂 👋
 
