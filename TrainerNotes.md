@@ -45,7 +45,7 @@ Please access the 'Train the trainer' Ironhack module to review our training fra
 - Zoom Polls
 - Zoom Breakout rooms
 - Code Pen exercises
-- Partner Project ??Using your real-world project or OpenSource ???
+- Working by pairs: Using your real-world project or the Star Wars Dark Mode CodePen page
 - (optional) Quiz race using Kahoot or MyQuiz
 
 ---
