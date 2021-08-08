@@ -79,13 +79,13 @@ Please access the 'Train the trainer' Ironhack module to review our training fra
 - Activty 1 (class divided by pairs and breakoutrooms): ask to add 5 more languages to the list and use the selectors they want to show they can work with them in the code.  
 of code using split the group into pairs and send
 
-(bring the students back to the main Zoom session to explain the instructions of the second activity)
+(bring the students back to the main Zoom session to explain the instructions for the second activity)
 
 - Activity 2: Using the 'real-live example' you brought (or using the Star Wars CodePen by JOSH https://codepen.io/spamgoblin/pen/VwbByXM)
 Ask them to modify the CSS to get it similar to X (screenshot of the final look of the site you want the students to replicate) 
 Check on each room, ask if they need help and suggest options accordingly.
 
-- Quick presentation: at the end of Activity 2, bring them all back to the main Zoom session and ask them to share their screens with the group to show the results of their work with the group.
+- Quick presentation: at the end of Activity 2, bring them all back to the main Zoom session and ask them to share their screens with the group to show the results of their work with the group. Ask them about their biggest challenges for the task.
 
 
 ### Part 3 - Questions and Next Steps
@@ -98,25 +98,14 @@ Revisit Data Analysis work flow for modeling - 2
 - Making predictions on the test data
 - Check model accuracy
 
-:exclamation: Note to instructor: When we work with multi class classification problem and use Logistic Regression method from `sklearn`, the argument "multi_class" can take different arguments. Discuss the one versus rest method and multinomial mehtod briefly, how they are different.
 
 
 ### :pencil2: Practice on key concepts - Lab
 
 > :clock10: 30 min
 
-<details>
-  <summary> Click for Instructions: Lab </summary>
 
-- Link to the lab: [https://github.com/ironhack-labs/lab-predictions-logistic-regression](https://github.com/ironhack-labs/lab-predictions-logistic-regression)
+Link to the lab: [https://github.com/ironhack-labs/lab-xxxxxxxxxxxxx)
 
-</details>
-
-<details>
-  <summary> Click for Solution: Lab solutions </summary>
-
-- Link to the [lab solution](https://gist.github.com/ironhack-edu/c3e7fba417de11bcf152ba6329acbbb4).
-
-</details>
 
 ---
