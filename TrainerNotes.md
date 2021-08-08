@@ -46,7 +46,7 @@ Please access the 'Train the trainer' Ironhack module to review our training fra
 - Zoom Breakout rooms
 - Code Pen exercises
 - Partner Project ??Using your real-world project or OpenSource ???
-- Quiz race using Kahoot or MyQuiz (optional)
+- (optional) Quiz race using Kahoot or MyQuiz
 
 ---
 
@@ -87,25 +87,21 @@ Check on each room, ask if they need help and suggest options accordingly.
 
 - Quick presentation: at the end of Activity 2, bring them all back to the main Zoom session and ask them to share their screens with the group to show the results of their work with the group. Ask them about their biggest challenges for the task.
 
+(optional) 7) Run a "quiz race" using Kahoot, MyQuiz or similar for learners to identify selectors used in the lesson. This is an optional activity if you need to complete the duration of the lesson and enables some fun competition amongst the students.
+
 
 ### Part 3 - Questions and Next Steps
 
 > :clock10: 20 min
 
-Revisit Data Analysis work flow for modeling - 2
+Ask if there are any questions about the content covered today
 
-- Fitting the model
-- Making predictions on the test data
-- Check model accuracy
-
-
-
-### :pencil2: Practice on key concepts - Lab
-
-> :clock10: 30 min
-
+Introduce the next and final activity of the course, which it's an individual task to be completed by every student within one week. As usual, then yhey will find all the required information in the <b>Github IronHack lab </b>. Please share the specific link to it and remind them of the usual fork-pull request process to submit their projects.
 
 Link to the lab: [https://github.com/ironhack-labs/lab-xxxxxxxxxxxxx)
 
+Remind them that they can contact you or the Ironhack supporting team via the standard channels and they can also use the Forum to exchange ideas (this could be a dedicated Ironhack Community platform, a Slack channel, etc.)
+
+Many thanks for your work and good luck! 🙂 👋
 
 ---
